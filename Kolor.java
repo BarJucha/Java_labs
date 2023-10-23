@@ -1,3 +1,3 @@
 public enum Kolor {
-    Trefl, Karo, Kier, Pik;
+    Trefl, Karo, Kier, Pik
 }

@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Objects;
-
 public class Talia {
     ArrayList<Karta> karty;
     public Talia(ArrayList<Karta> karty) {
