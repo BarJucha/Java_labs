@@ -1,7 +1,12 @@
 import java.util.ArrayList;
-
+/**
+ * Klasa GraWojna dziedziczy po klasie Gra. Posiada ona metody:
+ */
 public class GraWojna extends Gra{
     GraWojna(){}
+    /**
+     * Metoda symuluj() -> przeprowadza ona symulację gry w wojne pomiędzy dwoma graczami.
+     */
     public void symuluj() throws BrakKartException {
         int tura = 1;
         Gracz gracz1 = new Gracz();
