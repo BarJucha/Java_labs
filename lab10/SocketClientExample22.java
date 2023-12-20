@@ -9,7 +9,7 @@ import java.net.UnknownHostException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class SocketClientExample2 {
+public class SocketClientExample22 {
 
     public static void main(String[] args) throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException{
         //get the localhost IP address, if server is running on some other IP, you need to use that
@@ -19,7 +19,7 @@ public class SocketClientExample2 {
         Random random = new Random();
         int countI = 1;
         while (true){
-            Thread.sleep(random.nextInt(5000)+1000);
+            Thread.sleep(random.nextInt(5000)+5000);
             oos.writeObject("Numer wiadomości: " + countI++);
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
             String message = (String) ois.readObject();

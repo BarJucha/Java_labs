@@ -16,7 +16,6 @@ public class ServerExecutive2 implements Runnable{
     public void run() {
         while (true){
             try {
-                new Thread(new OISThread(socket)).start();
                 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
                 while(true) {
                     String message = (String) ois.readObject();

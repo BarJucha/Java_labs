@@ -5,7 +5,7 @@ import java.lang.ClassNotFoundException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class SocketServerExample2 {
+public class SocketServerExample3 {
 
     //static ServerSocket variable
     private static ServerSocket server;
@@ -21,8 +21,7 @@ public class SocketServerExample2 {
             //creating socket and waiting for client connection
             Socket socket = server.accept();
             System.out.println("Połączono z " + i + " klientem");
-            new Thread(new ServerExecutive2(socket, i++)).start();
+            new Thread(new ServerExecutive3(socket, i++)).start();
         }
     }
-
 }
