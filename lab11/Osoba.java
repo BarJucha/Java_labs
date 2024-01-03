@@ -7,4 +7,12 @@ public class Osoba {
     }
     public int getWiek(){return wiek;}
     public String getNazwisko(){return nazwisko;}
+
+    @Override
+    public String toString() {
+        return "Osoba {" +
+                "nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek +
+                '}';
+    }
 }
